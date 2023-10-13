@@ -55,5 +55,11 @@ body{
     background: transparent;
     margin-left: 6px;
     font-family: monospace;
+    transition: 350ms ease-in-out;
 
+}
+
+.logo:hover{
+    font-size: 4em;
+    color: #45ee;
 }
