@@ -5,10 +5,8 @@
 }
 
 body{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: url('deer.jpg');
-    background-size: cover;
-    background-repeat: none;  
+    background-color: #1f242d;
+    color: white;
 }
 
 .header-wrapper{
@@ -27,8 +25,10 @@ body{
     margin-left: 56px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    
+    font-size: 20px; 
+}
+a.active {
+    color: #56f;
 }
 .navbar a::after{
     content: '';
@@ -39,27 +39,50 @@ body{
     left: -1px;
     top: 30px;
     border-radius: 5px;
-    transition: 600ms ease-in-out;
-            
-
+    transition: 600ms ease-in-out;           
 }
 .navbar a:hover::after{
     width: 100%;
 }
 
 .logo{
-    font-size: 3em;
+    font-size: 2.4em;
     font-weight: bold;
     color: white;
     cursor: default;
-    background: transparent;
     margin-left: 6px;
-    font-family: monospace;
     transition: 350ms ease-in-out;
-
 }
 
 .logo:hover{
-    font-size: 4em;
-    color: #45ee;
+    font-size: 2.5em;
+    color: rgba(134, 142, 209, 0.933);
+}
+
+.avatar img{
+    border-radius: 200px;
+    width: 200px;
+}
+.info{
+    margin-top: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info h2{
+    font-size: 2.6em;
+    letter-spacing: 1px;
+}
+.info h1 span {
+    color: rgb(42, 223, 240);
+}
+
+.text i{
+    position: relative;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 2px;
+    transition: 0.3ms;
+
 }
