@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #1f242d;
+    background-color: #10151f;
     color: white;
 }
 
@@ -19,6 +19,9 @@ body{
 
 .navbar{
     margin-right: 25px;
+    display: inline-block;
+    animation: slideUp 1s ease forwards;
+   
 }
 .navbar a{
     position: relative;
@@ -51,13 +54,16 @@ a.active {
     color: white;
     cursor: default;
     margin-left: 30px;
-    animation: slideRight 1.5s ease;
-
+    animation: slideRight 1s ease forwards;
 }
 
 .avatar img{
     border-radius: 200px;
-    width: 200px;
+    width: 160px;
+    margin-right: 150px;
+    animation: getIn 1s ease forwards;
+    opacity: 0;
+    animation-delay: .8s;
 }
 .info{
     margin-top: 39px;
@@ -69,6 +75,17 @@ a.active {
 .info h2{
     font-size: 2.6em;
     letter-spacing: 1px;
+}
+.info h3{
+    font-size: 60px;
+    font-weight: 800;
+    animation: delay 1s forwards;
+    animation-delay: .7s;
+    opacity: 0;
+}
+p{
+    font-size: 20px;
+    animation: slideIn 2s ease forwards;
 }
 .info h1 span {
     color: rgb(42, 223, 240);
@@ -83,6 +100,9 @@ a.active {
     font-size: 25px;
     color: #0ef;
     transition: 0.4ms;
+    opacity: 0;
+    animation: icon 1s forwards;
+    animation-delay: calc(0.2s * var(--i));
 }
 i:hover{
     box-shadow: 0 0 20px #0ef;
@@ -91,13 +111,101 @@ i:hover{
     line-height: 1.4;
 }
 
+.drop{
+    animation: drop 1s ease forwards;
+    opacity: 0;
+}
+ .rise{
+    animation: rise 1s ease forwards;
+    opacity: 0;
+}
+
 @keyframes slideRight {
     0% {
-        transform: translateX(-100px);
+        transform: translateX(-10px);
         opacity: 0;
     }
     100%{
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0%{
+        transform: translateY(100px)
+    }
+    
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes drop {
+    0%{
+        transform: translateY(-60px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes rise {
+    0%{
+        transform: translateY(60px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+@keyframes delay {
+    0%{
+        transform: translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+@keyframes slideIn {
+    0%{
+        transform: translateX(100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+@keyframes icon{
+    0%{
+        transform: translateY(-60px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+@keyframes getIn{
+    0%{
+        transform: scale(0);
+        opacity:0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+
     }
 }
