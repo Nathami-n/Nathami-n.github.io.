@@ -59,8 +59,8 @@ a.active {
 
 .avatar img{
     border-radius: 200px;
-    width: 160px;
-    margin-right: 150px;
+    width: 200px;
+    margin-right: 120px;
     animation: getIn 1s ease forwards;
     opacity: 0;
     animation-delay: .8s;
