@@ -1,5 +1,5 @@
 let typed = new Typed('#type', {
-    strings: ['DJANGO-DEVELOPER', 'REACT-DEVELOPER'],
+    strings: ['BACKEND-DEVELOPER', 'FRONTEND-DEVELOPER'],
     typeSpeed: 60,
     backSpeed: 50,
     backDelay: 1000,

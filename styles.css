@@ -210,3 +210,34 @@ i:hover{
     }
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        font-size: .6rem;
+    }
+    .avatar img {
+        width: 110px;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar > a {
+        margin-bottom: 3px;
+        transition: .5s ease-in-out;
+    }
+    .navbar > a:hover{
+        color: #0ef;
+    }
+
+    .navbar a::after {
+        display: none;
+    }
+
+    .text i {
+        border-radius: 50%;
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 56px !important;
+    }
+}
